@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <h1>About Me</h1>
-    Github : <a href="{{ $link}}">{{ $link}}</a>
+<x-layout title="About - My Portfolio">
+    <h2>About Me</h2>
+    <b>You can reach me via</b> <br> 
+    <b>Github</b> : <a href="{{ $link['git']}}">{{ $link['git']}}</a> <br>
+    <b>Gmail</b> : <a href="{{ $link['gmail']}}">{{ $link['gmail']}}</a>
     <br>
-    <a href="/">back</a>
-
-</body>
-</html>
+</x-layout>
